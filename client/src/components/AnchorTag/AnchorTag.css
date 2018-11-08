@@ -1,0 +1,11 @@
+.logging-logger {
+    color: rgb(159, 6, 230) !important;
+}
+
+.logging-logger:hover{
+    border-bottom: 1px solid;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    -webkit-transition: text-shadow .05s;
+    transition: text-shadow .05s;
+}
