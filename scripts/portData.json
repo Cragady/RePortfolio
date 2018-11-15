@@ -1,0 +1,98 @@
+[
+    {
+        "link": "https://cragady.github.io/Word-Guess-Game/",
+        "title": "Hangman",
+        "piPath": "../imgrsc/hangman-game.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://cragady.github.io/unit-4-game/",
+        "title": "RPGGame",
+        "piPath": "../imgrsc/RPG-game.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://cragady.github.io/TriviaGame/",
+        "title": "TriviaGame",
+        "piPath": "../imgrsc/trivia-game.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://cragady.github.io/RPS-Multiplayer/",
+        "title": "RockPaperScissors",
+        "piPath": "../imgrsc/RPS-game.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://cragady.github.io/giphy-games/",
+        "title": "GiphyApi",
+        "piPath": "../imgrsc/giphy-gifs.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://cragady.github.io/08_project-1/",
+        "title": "ChefinyourPantry(Group)",
+        "piPath": "../imgrsc/chef-in-your-pantry.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://github.com/Cragady/liri-node-app",
+        "title": "liri.js",
+        "piPath": "../imgrsc/liriJS.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://github.com/Cragady/Word-Guess-Cli",
+        "title": "Word-Guess<br>(CommandLine)",
+        "piPath": "../imgrsc/word-guess-pic.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://immense-reef-53914.herokuapp.com/",
+        "title": "FriendFinder",
+        "piPath": "../imgrsc/friend-finder2.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://infinite-escarpment-10093.herokuapp.com/",
+        "title": "Burger",
+        "piPath": "../imgrsc/burgers.png",
+        "upped": false
+    },
+    {
+        "link": "https://arcane-sea-52510.herokuapp.com/",
+        "title": "BurgerSequel",
+        "piPath": "../imgrsc/Burgers2.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://calm-ocean-96864.herokuapp.com/",
+        "title": "Book-MarkY!",
+        "piPath": "../imgrsc/Book-MarkY!.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://nameless-sands-15542.herokuapp.com/",
+        "title": "NewsScraper",
+        "piPath": "../imgrsc/web-scraper.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://cragady.github.io/Clicky-Game/",
+        "title": "ClickyGame",
+        "piPath": "../imgrsc/clicky.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://pure-lake-85163.herokuapp.com",
+        "title": "NYTScrubber",
+        "piPath": "../imgrsc/nyt-scrubber.PNG",
+        "upped": false
+    },
+    {
+        "link": "https://fathomless-lake-80884.herokuapp.com/",
+        "title": "IntroNerd",
+        "piPath": "../imgrsc/intronerd.PNG",
+        "upped": false
+    }
+]
