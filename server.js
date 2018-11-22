@@ -5,7 +5,6 @@ const express = require('express'),
     app = express(),
     path = require('path'),
     session = require('express-session'),
-    Grid = require('gridfs-stream'),
     PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,7 +21,7 @@ if(process.env.NODE_ENV === 'production'){
 };
 
 app.use(routes);
-app.use(express.static('imgrsc'));
+app.use(express.static('images'));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/portyPorts');
 app.get("*", (req, res) =>{

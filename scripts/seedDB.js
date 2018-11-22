@@ -9,6 +9,9 @@ mongoose.connect(
     'mongodb://localhost/portyPorts'
 );
 
+db.PicData.remove({})
+    .then(() =>{//start chain
+
 portData.forEach(function(item, iterator){
     db.PicData  
         .updateOne({'title': item.title}, item, {upsert: true, '$setOnInsert': {'title': item.title}})
@@ -23,4 +26,6 @@ portData.forEach(function(item, iterator){
             process.exit(1);
         });
 });
+
+}); //end chain
 

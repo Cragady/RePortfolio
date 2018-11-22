@@ -1,82 +1,104 @@
 [
     {
-        "link": "https://cragady.github.io/Word-Guess-Game/",
+        "link": "https://cragady.github.io/Word-Guess-Game",
+        "repo": "https://github.com/Cragady/Word-Guess-Game",
         "title": "Hangman",
-        "piPath": "../imgrsc/hangman-game.PNG"
+        "piPath": "/images/hangman-game.PNG"
     },
     {
-        "link": "https://cragady.github.io/unit-4-game/",
+        "link": "https://cragady.github.io/unit-4-game",
+        "repo": "https://github.com/Cragady/unit-4-game",
         "title": "RPGGame",
-        "piPath": "../imgrsc/RPG-game.PNG"
+        "piPath": "/images/RPG-game.PNG"
     },
     {
-        "link": "https://cragady.github.io/TriviaGame/",
+        "link": "https://cragady.github.io/TriviaGame",
+        "repo": "https://github.com/Cragady/TriviaGame",
         "title": "TriviaGame",
-        "piPath": "../imgrsc/trivia-game.PNG"
+        "piPath": "/images/trivia-game.PNG"
     },
     {
-        "link": "https://cragady.github.io/RPS-Multiplayer/",
+        "link": "https://cragady.github.io/RPS-Multiplayer",
+        "repo": "https://github.com/Cragady/RPS-Multiplayer",
         "title": "RockPaperScissors",
-        "piPath": "../imgrsc/RPS-game.PNG"
+        "piPath": "/images/RPS-game.PNG"
     },
     {
-        "link": "https://cragady.github.io/giphy-games/",
+        "link": "https://cragady.github.io/giphy-games",
+        "repo": "https://github.com/Cragady/giphy-games",
         "title": "GiphyApi",
-        "piPath": "../imgrsc/giphy-gifs.PNG"
+        "piPath": "/images/giphy-gifs.PNG"
     },
     {
-        "link": "https://cragady.github.io/08_project-1/",
+        "link": "https://cragady.github.io/08_project-1",
+        "repo": "https://github.com/Cragady/08_project-1",
         "title": "ChefinyourPantry(Group)",
-        "piPath": "../imgrsc/chef-in-your-pantry.PNG"
+        "piPath": "/images/chef-in-your-pantry.PNG"
     },
     {
         "link": "https://github.com/Cragady/liri-node-app",
-        "title": "liri.js",
-        "piPath": "../imgrsc/liriJS.PNG"
+        "repo": "https://github.com/Cragady/liri-node-app",
+        "title": "liri.js CLI",
+        "piPath": "/images/liriJS.PNG"
     },
     {
         "link": "https://github.com/Cragady/Word-Guess-Cli",
-        "title": "Word-Guess<br>(CommandLine)",
-        "piPath": "../imgrsc/word-guess-pic.PNG"
+        "repo": "https://github.com/Cragady/Word-Guess-Cli",
+        "title": "Word-Guess CLI",
+        "piPath": "/images/word-guess-pic.PNG"
     },
     {
-        "link": "https://immense-reef-53914.herokuapp.com/",
+        "link": "https://github.com/Cragady/bamazon-cli",
+        "repo": "https://github.com/Cragady/bamazon-cli",
+        "title": "Bamazon CLI",
+        "piPath": "/images/bamazon.PNG"
+    },
+    {
+        "link": "https://immense-reef-53914.herokuapp.com",
+        "repo": "https://github.com/Cragady/FriendFinder",
         "title": "FriendFinder",
-        "piPath": "../imgrsc/friend-finder2.PNG"
+        "piPath": "/images/friend-finder2.PNG"
     },
     {
-        "link": "https://infinite-escarpment-10093.herokuapp.com/",
+        "link": "https://infinite-escarpment-10093.herokuapp.com",
+        "repo": "https://github.com/Cragady/burger",
         "title": "Burger",
-        "piPath": "../imgrsc/burgers.png"
+        "piPath": "/images/burgers.png"
     },
     {
-        "link": "https://arcane-sea-52510.herokuapp.com/",
+        "link": "https://arcane-sea-52510.herokuapp.com",
+        "repo": "https://github.com/Cragady/burger-sequel",
         "title": "BurgerSequel",
-        "piPath": "../imgrsc/Burgers2.PNG"
+        "piPath": "/images/Burgers2.PNG"
     },
     {
-        "link": "https://calm-ocean-96864.herokuapp.com/",
+        "link": "https://calm-ocean-96864.herokuapp.com",
+        "repo": "https://github.com/user-outerface/project-2",
         "title": "Book-MarkY!",
-        "piPath": "../imgrsc/Book-MarkY!.PNG"
+        "piPath": "/images/Book-MarkY!.PNG"
     },
     {
-        "link": "https://nameless-sands-15542.herokuapp.com/",
+        "link": "https://nameless-sands-15542.herokuapp.com",
+        "repo": "https://github.com/Cragady/Scraper",
         "title": "NewsScraper",
-        "piPath": "../imgrsc/web-scraper.PNG"
+        "piPath": "/images/web-scraper.PNG"
     },
     {
-        "link": "https://cragady.github.io/Clicky-Game/",
+        "link": "https://cragady.github.io/Clicky-Game",
+        "repo": "https://github.com/Cragady/Clicky-Game",
         "title": "ClickyGame",
-        "piPath": "../imgrsc/clicky.PNG"
+        "piPath": "/images/clicky.PNG"
     },
     {
         "link": "https://pure-lake-85163.herokuapp.com",
+        "repo": "https://github.com/Cragady/NYT-Scrubber",
         "title": "NYTScrubber",
-        "piPath": "../imgrsc/nyt-scrubber.PNG"
+        "piPath": "/images/nyt-scrubber.PNG"
     },
     {
-        "link": "https://fathomless-lake-80884.herokuapp.com/",
+        "link": "https://fathomless-lake-80884.herokuapp.com",
+        "repo": "https://github.com/user-outerface/project-3",
         "title": "IntroNerd",
-        "piPath": "../imgrsc/intronerd.PNG"
+        "piPath": "/images/intronerd.PNG"
     }
 ]
