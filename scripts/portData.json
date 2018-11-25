@@ -8,31 +8,31 @@
     {
         "link": "https://cragady.github.io/unit-4-game",
         "repo": "https://github.com/Cragady/unit-4-game",
-        "title": "RPGGame",
+        "title": "RPG Game",
         "piPath": "/images/RPG-game.PNG"
     },
     {
         "link": "https://cragady.github.io/TriviaGame",
         "repo": "https://github.com/Cragady/TriviaGame",
-        "title": "TriviaGame",
+        "title": "Trivia Game",
         "piPath": "/images/trivia-game.PNG"
     },
     {
         "link": "https://cragady.github.io/RPS-Multiplayer",
         "repo": "https://github.com/Cragady/RPS-Multiplayer",
-        "title": "RockPaperScissors",
+        "title": "Rock Paper Scissors",
         "piPath": "/images/RPS-game.PNG"
     },
     {
         "link": "https://cragady.github.io/giphy-games",
         "repo": "https://github.com/Cragady/giphy-games",
-        "title": "GiphyApi",
+        "title": "Giphy Api",
         "piPath": "/images/giphy-gifs.PNG"
     },
     {
         "link": "https://cragady.github.io/08_project-1",
         "repo": "https://github.com/Cragady/08_project-1",
-        "title": "ChefinyourPantry(Group)",
+        "title": "Chef in your Pantry (Group)",
         "piPath": "/images/chef-in-your-pantry.PNG"
     },
     {
@@ -56,7 +56,7 @@
     {
         "link": "https://immense-reef-53914.herokuapp.com",
         "repo": "https://github.com/Cragady/FriendFinder",
-        "title": "FriendFinder",
+        "title": "Friend Finder",
         "piPath": "/images/friend-finder2.PNG"
     },
     {
@@ -68,7 +68,7 @@
     {
         "link": "https://arcane-sea-52510.herokuapp.com",
         "repo": "https://github.com/Cragady/burger-sequel",
-        "title": "BurgerSequel",
+        "title": "Burger Sequel",
         "piPath": "/images/Burgers2.PNG"
     },
     {
@@ -80,19 +80,19 @@
     {
         "link": "https://nameless-sands-15542.herokuapp.com",
         "repo": "https://github.com/Cragady/Scraper",
-        "title": "NewsScraper",
+        "title": "News Scraper",
         "piPath": "/images/web-scraper.PNG"
     },
     {
         "link": "https://cragady.github.io/Clicky-Game",
         "repo": "https://github.com/Cragady/Clicky-Game",
-        "title": "ClickyGame",
+        "title": "Clicky Game",
         "piPath": "/images/clicky.PNG"
     },
     {
         "link": "https://pure-lake-85163.herokuapp.com",
         "repo": "https://github.com/Cragady/NYT-Scrubber",
-        "title": "NYTScrubber",
+        "title": "NYT Scrubber",
         "piPath": "/images/nyt-scrubber.PNG"
     },
     {

@@ -48,8 +48,10 @@ export class Portfolio extends Component{
                                         // </div>
                                         <div className='col p-0 p-img-div my-1 mx-auto' key={pics._id} onMouseOver={() => {this.picMouse(pics.title)}} onMouseLeave={() => {this.picUnMouse(pics.title)}}>
                                             <img className='portimage' src={pics.piPath} alt={pics.title + ' project'}/>
-                                            <div className='view-destroyer bg-danger' id={'cover-' + pics.title}>
-                                            
+                                            <div className='view-destroyer' id={'cover-' + pics.title}>
+                                                <h1 className='col-12 destroyer-text'>{pics.title}</h1>
+                                                <a className='col another-a' href={pics.link} target='_blank'>App</a>
+                                                <a className='col another-a' href={pics.repo} target='_blank'>Repository</a>
                                             </div>
                                         </div>
                                     );

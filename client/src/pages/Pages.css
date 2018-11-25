@@ -34,5 +34,20 @@
 
 .view-destroyer{
     visibility: hidden;
+    background: rgba(0, 0, 0, 0.644);
     z-index: 1;
+}
+
+.destroyer-text{
+    font-size: 2em;
+    color: #fff;
+}   
+
+.another-a{
+    color: rgb(68, 197, 230);
+    text-decoration: underline;
+}
+
+.another-a:hover{
+    color: rgb(200, 118, 204);
 }
