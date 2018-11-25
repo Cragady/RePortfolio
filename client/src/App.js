@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Test, Contact, Main, Portfolio} from './pages';
+import {Test, Contact, Main, Home, Portfolio} from './pages';
 import {Nav} from './components/Nav';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -19,9 +19,13 @@ class App extends Component {
               path='/portfolio'
               component={Portfolio}
             />
+            <Route
+              path='/about'
+              component={Main}
+            />
             <Route 
               path='/'
-              component={Main}
+              component={Home}
             />
           </Switch>
         </div>
