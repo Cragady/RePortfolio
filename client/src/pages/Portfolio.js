@@ -22,26 +22,42 @@ export class Portfolio extends Component{
         });
     };
 
+    picMouse = (passer)=>{
+        document.getElementById('cover-' + passer).style.display = 'initial';
+    };
+
+    picUnMouse = (passer)=>{
+        document.getElementById('cover-' + passer).style.display = 'none';
+    };
+
     render(){
         const picLinks = this.state.picData;
         // console.log(picLinks[0]);
         return(
             <section className='container'>
-                <div className='card mt-5'>
+                {/* <div className='card mt-5'> */}
                     <div id='my-ports' className='row'>
-                        <div>
+                        {/* <div> */}
                             {picLinks !== undefined && 
                                 picLinks.map(pics =>{
-                                    return( <div key={pics._id}>
-                                        {pics.title}<br/>
-                                        <a href={pics.repo} target='_blank'>Repository</a>
-                                        <a href={pics.link} target='_blank'><img className='portimage' src={pics.piPath} alt={pics.title + ' project'} /></a>
-                                    </div>)
+                                    return( 
+                                        // <div key={pics._id}>
+                                        //     {pics.title}<br/>
+                                        //     <a href={pics.repo} target='_blank'>Repository</a>
+                                        //     <a href={pics.link} target='_blank'><img className='portimage' src={pics.piPath} alt={pics.title + ' project'} /></a>
+                                        // </div>
+                                        <div className='col p-0 p-img-div my-1 mx-auto' key={pics._id}>
+                                            <img className='portimage' src={pics.piPath} alt={pics.title + ' project'} onMouseEnter={() => {this.picMouse(pics.title)}} />
+                                            <div className='view-destroyer bg-danger' id={'cover-' + pics.title} onMouseLeave={() => {this.picUnMouse(pics.title)}}>
+                                            
+                                            </div>
+                                        </div>
+                                    );
                                 })    
                             }
-                        </div>
+                        {/* </div> */}
                     </div>
-                </div>
+                {/* </div> */}
             </section>
         );
     };
