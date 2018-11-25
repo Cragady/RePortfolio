@@ -23,11 +23,11 @@ export class Portfolio extends Component{
     };
 
     picMouse = (passer)=>{
-        document.getElementById('cover-' + passer).style.display = 'initial';
+        document.getElementById('cover-' + passer).style.visibility = 'visible';
     };
 
     picUnMouse = (passer)=>{
-        document.getElementById('cover-' + passer).style.display = 'none';
+        document.getElementById('cover-' + passer).style.visibility = 'hidden';
     };
 
     render(){
@@ -46,9 +46,9 @@ export class Portfolio extends Component{
                                         //     <a href={pics.repo} target='_blank'>Repository</a>
                                         //     <a href={pics.link} target='_blank'><img className='portimage' src={pics.piPath} alt={pics.title + ' project'} /></a>
                                         // </div>
-                                        <div className='col p-0 p-img-div my-1 mx-auto' key={pics._id}>
-                                            <img className='portimage' src={pics.piPath} alt={pics.title + ' project'} onMouseEnter={() => {this.picMouse(pics.title)}} />
-                                            <div className='view-destroyer bg-danger' id={'cover-' + pics.title} onMouseLeave={() => {this.picUnMouse(pics.title)}}>
+                                        <div className='col p-0 p-img-div my-1 mx-auto' key={pics._id} onMouseOver={() => {this.picMouse(pics.title)}} onMouseLeave={() => {this.picUnMouse(pics.title)}}>
+                                            <img className='portimage' src={pics.piPath} alt={pics.title + ' project'}/>
+                                            <div className='view-destroyer bg-danger' id={'cover-' + pics.title}>
                                             
                                             </div>
                                         </div>

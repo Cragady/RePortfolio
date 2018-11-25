@@ -33,6 +33,6 @@
 }
 
 .view-destroyer{
-    display: none;
+    visibility: hidden;
     z-index: 1;
 }
