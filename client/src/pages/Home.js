@@ -18,7 +18,7 @@ export class Home extends Component{
                         </div>
 
                         <div className='col quick-intro'>
-                            <p>dsjklfa;jfsdkl</p>
+                            <p>As a developer, my goal is to ever expand my skill set, enabling me to be versatile in any work environment.</p>
                         </div>
                     </div>
                     
