@@ -66,3 +66,8 @@
 .another-a:hover{
     color: rgb(200, 118, 204);
 }
+
+.p-about{
+    text-indent: 2.5em;
+    text-align: left;
+}

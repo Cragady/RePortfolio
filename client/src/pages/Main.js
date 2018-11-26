@@ -12,19 +12,41 @@ export class Main extends Component{
                         <h1 className="text-center border-top border-secondary">About Me</h1>
                     </div>
                     
-                    <p className="p-2 mt-4 p-indent">My name is Craig, I'm hoping to get myself into a job field that is more 
-                        tech oriented than my current job. I usually like to go longboarding when the 
-                        weather is nice, or if that seems a bit too quick paced for me at the time I'll
-                        just go on a walk. I like gaming, and as of writing this, I am making my way through
-                        Dark Souls 3 after taking a bit of a break from Kingdom Hearts.
+                    <p className="p-2 mt-4 p-about">My name is Craig, I'm currently seeking a more technicaly oriented career. 
+                        To actualize this goal, I attended a six month long coding bootcamp hosted by the University of Utah. 
+                        My experience with this course was crucial for my growth as a developer. It has given me a strong 
+                        starting point to build off of, and has given me important studying techniques to learn new technologies 
+                        and current web development practices. With these techniques, I can keep expanding my knowledge to learn 
+                        anything I set my mind to.
                     </p>
 
-                    <p className="p-2 p-indent">My interest in web development began as I was taking a class through SLCC,
-                        Living in a Digital World, there was an assignment that had us build a 
-                        working wiki page about a mock event we were to set up. To style the page, 
-                        I went into the pages source and started changing things to suit the style of the 
-                        project. Since then it's been a fascination, and now I've decided to take steps towards
-                        becoming a web developer.
+                    <p className="p-2 p-about">My interest in web development began as I was taking a class through SLCC,
+                        Living in a Digital World. On one assignment, the class was split into groups to build a wiki page.
+                        This excersize required the groups to create a mock event; the wiki had a complete setup with scheduling,
+                        a map of the area with hotel markers, video advertisements, and descriptions of the event.
+                        
+                        <p>
+                            One of my responsibilities was the overall design of the page. The wiki had templates available for this
+                            portion. The vanilla templates were boring, so I explored my options with the setup. There was an option
+                            to edit the html of the page. It was with this that I was exposed to HTML and inline CSS. Since then 
+                            I've had a fascination for what makes a web page what it is, and how it works; I've decided to take steps 
+                            towards becoming a web developer. 
+                        </p>
+                    </p>
+            
+                    <h2>A more personal and relaxed note:</h2>
+
+                    <p className='p-2 p-about'>
+                        I have several different hobbies, most the time I can't keep up with them all as I like to experience a plethora
+                        of activities. To work around my need for a vast set of hobbies, I focus on a few and touch up on the lesser visited 
+                        hobbies sporadically. 
+
+                        <p>
+                            I usually like to go longboarding when the weather is nice, or if that seems a bit too quick paced for me at the 
+                            time I'll just go on a walk. I also enjoy gaming, although recently I haven't had as much time to devote towards gaming
+                            as I have in the past, but that's not necessarily a bad thing; I am devoting more time towards learning and self-driven
+                            projects. 
+                        </p>
                     </p>
                 {/* </div> */}
             </section>
