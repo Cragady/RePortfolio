@@ -40,7 +40,7 @@ export const Nav = props =>{
                         About Me
                     </Link>
                 </li>
-                <li className='ml-auto mr-1 d-flex align-items-center'>
+                {/* <li className='ml-auto mr-1 d-flex align-items-center'>
                     {props.login !== '' ? <DropAc logout={props.logout} login={props.login} /> : (
                         <div>
                             <A hrefless='true'
@@ -61,7 +61,7 @@ export const Nav = props =>{
                             </div>
                         </div>
                     )}
-                </li>
+                </li> */}
             </ul>
         </div>
     );
