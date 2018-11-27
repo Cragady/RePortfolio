@@ -14,7 +14,7 @@ export class Home extends Component{
 
                     <div className='row'>
                         <div className='col'>
-                            <img className='rounded img-fluid img-me' src='/images/new-pic-o-me.jpg' alt='picture of me' />
+                            <img className='rounded img-fluid img-me' src='/images/propic2.jpg' alt='Craig Wright' />
                         </div>
 
                         <div className='col quick-intro'>

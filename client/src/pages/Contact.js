@@ -7,21 +7,17 @@ export class Contact extends Component {
             <div id="main-contact">
                 {/* <Not functional, I may nix this page */}
                 <section className="container card mt-5 form-cust">
-                    <form>
 
-                        <div className="form-group mt-3">
-                            <label htmlFor="email-field">Email Address</label>
-                            <input type="email" className="form-control form-cust" id="email-field" placeholder="name@example.com" />
-                        </div>
+                    <p>Email: craigwright2048@gmail.com</p>
+                    <p>Phone: (801) 808-0280</p> 
+                    <a className='btn btn-user-message mb-3 form-cust' href='mailto:craigwright2048@gmail.com?subject=Contact From Portfolio'>Send Email</a>
 
-                        <div className="form-group">
-                            <label htmlFor="user-message">Your Message</label>
-                            <textarea className="form-control form-cust" id="user-message" rows="5"></textarea>
-                        </div>
+                    {/* <form action='mailto:craigwright2048@gmail.com' method='post'
+                    enctype='text/plain'>
 
-                        <button type="submit" id="user-message-send" className="btn btn-user-message mb-3 form-cust">Send Message</button>
+                        <button type="submit" id="user-message-send" className="btn btn-user-message mb-3 form-cust">Send Email</button>
 
-                    </form>
+                    </form> */}
                 </section>
             
             </div> 

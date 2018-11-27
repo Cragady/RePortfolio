@@ -10,12 +10,17 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # To Do
 
-* Make accordion sidebar for nav-bar; will only expand when on the main page
-* Migrate pictures and meta-data for pics to database for storing
-* use `multer`, `multer-gridfs-storage`,`method-override`, `gridfs (maybe not package)`, and `gridfs-stream` for this
-* make an easy submit page for updating portfolio; will only be accessible to me with credentials
-* make user login for me only
+* what I enjoy on about me~~
+* title/header with appropriate spacing on portfolio page
+* More content to home page?
+* ~Make accordion sidebar for nav-bar; will only expand when on the main page~
 * prettify it (this may be the heaviest time sink? Maybe)
+
+# Possible Ideas
+
+* Click to reveal a word that flies to edge of div. It stops at edge then disintigrates.
+* Keep with the database idea (only have login for me)
+* have the path salted, hashed, and stored (can only be linked if you know the path, the code won't reveal the path)
 
 # packages example:
 
