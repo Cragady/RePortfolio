@@ -1,3 +1,5 @@
+# clean house with the dependencies
+
 # Deploying/Re-deploying
 
 Remember when you're pushing changes to heroku, it will keep the database the exact same, you have to run the seed manually (which is probably better, even if it was accidental).
