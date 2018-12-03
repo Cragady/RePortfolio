@@ -31,10 +31,12 @@
 }
 
 .no-btn{
+    color: #fff;
     cursor: default!important;
 }
 
 .btn-cust-prof{
+    color: #fff;
     background: #333;
 }
 

@@ -9,7 +9,7 @@ export class Home extends Component{
 
                     <div className="card-header">
                         {/* <img className="rounded-circle img-fluid img-custom m-5" src="assets/images/20180210_175508v2.png" alt="Craig Wright" /> */}
-                        <h3 className="text-center border-top border-secondary">Welcome! I'm Craig, a certified Full Stack Developer</h3>
+                        <h3 className="text-center border-top border-secondary text-white">Welcome! I'm Craig, a certified Full Stack Developer</h3>
                     </div>
 
                     <div className='row'>
@@ -17,7 +17,7 @@ export class Home extends Component{
                             <img className='rounded img-fluid img-me' src='/images/propic2.jpg' alt='Craig Wright' />
                         </div>
 
-                        <div className='col quick-intro'>
+                        <div className='col quick-intro text-white'>
                             <p>As a developer, my goal is to ever expand my skill set, enabling me to be versatile in any work environment.</p>
                         </div>
                     </div>

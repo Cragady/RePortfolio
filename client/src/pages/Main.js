@@ -9,7 +9,7 @@ export class Main extends Component{
 
                     <div className="card-header">
                         {/* <img className="rounded-circle img-fluid img-custom m-5" src="assets/images/20180210_175508v2.png" alt="Craig Wright" /> */}
-                        <h1 className="text-center border-top border-secondary">About Me</h1>
+                        <h1 className="text-center border-top border-secondary text-white">About Me</h1>
                     </div>
                     
                     <p className="p-2 mt-4 p-about">My name is Craig, I'm currently seeking a more technicaly oriented career. 
@@ -43,7 +43,7 @@ export class Main extends Component{
                         a work around, or a new approach is necessary for the completion of the overall goal.
                     </p>
             
-                    <h2>A more personal and relaxed note:</h2>
+                    <h2 className='text-white'>A more personal and relaxed note:</h2>
 
                     <p className='p-2 p-about'>
                         I have several different hobbies, most the time I can't keep up with them all as I like to experience a plethora
