@@ -1,0 +1,12 @@
+.diffground{
+    position: fixed;
+    /* background-size: 100% 100vh;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    z-index: 1000; */
+}
+
+.diffground2{
+    background: rgba(0, 0, 0, 0.660);
+}

@@ -15,7 +15,7 @@ export class Portfolio extends Component{
         this.getPicInfo();
     };
 
-    getPicInfo(){
+    getPicInfo = () =>{
         API.allPics().then(res =>{
             this.setState({
                 picData: res.data

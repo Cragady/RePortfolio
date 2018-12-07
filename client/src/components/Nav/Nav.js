@@ -7,7 +7,7 @@ import './Nav.css';
 
 export const Nav = props =>{
     return(
-        <div className='da-navs my-1'>
+        <div className='da-navs'>
             <ul className='nav nav-cust'>
                 <li className='nav-item li-item-cust'>
                     <Link

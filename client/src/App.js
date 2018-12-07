@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Test, Contact, Main, Home, Portfolio} from './pages';
 import {Nav} from './components/Nav';
+import {BackgroundDancer} from './components/BackgroundDancer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
@@ -9,6 +10,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <BackgroundDancer />
           <Nav />
           <Switch>
             <Route
