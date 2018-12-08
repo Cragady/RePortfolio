@@ -84,7 +84,7 @@ export class BackgroundDancer extends Component {
                     });
                 }
             );
-        }, 14000);
+        }, 90000);
     };
 
     render(){
