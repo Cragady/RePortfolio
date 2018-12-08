@@ -10,6 +10,9 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # To Do
 
+* Enable filtering functionality on the Portfolio Page
+* Add a skills page
+* Make that page cool
 * More content to home page?
 * ~Make accordion sidebar for nav-bar; will only expand when on the main page~
 * prettify it (this may be the heaviest time sink? Maybe)
