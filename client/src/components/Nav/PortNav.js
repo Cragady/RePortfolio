@@ -7,7 +7,7 @@ import './Nav.css';
 
 export const PortNav = props =>{
     return(
-        <section>
+        <section className='port-head rounded'>
             <h1 className='text-white'>Projects</h1>
 
             <div className='my-1'>

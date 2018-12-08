@@ -4,7 +4,7 @@ import './Pages.css';
 export class Main extends Component{
     render(){
         return(
-            <section className="container cont-cust">
+            <section className="container cont-cust py-2 mb-3">
                 {/* <div className="card mt-5"> */}
 
                     <div className="card-header">

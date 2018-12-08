@@ -30,10 +30,11 @@ export class BackgroundDancer extends Component {
                 background: 'rgba(0, 0, 0, 1)'
             });
             middle();
-            cb(false, true, 1000, 660, cb);
+            setTimeout(function(){cb(false, true, 1000, 440, cb)}, 160);
+            return;
         } else if(runner === finisher && middle === undefined){
             Object.assign(element.style, {
-                background: 'rgba(0, 0, 0, 1)'
+                background: 'rgba(0, 0, 0, 0.440)'
             });
             return;
         };
@@ -53,7 +54,8 @@ export class BackgroundDancer extends Component {
         const element = document.getElementById('diffground');
         const prePath = 'images/';
         const piPath = this.picRando(prePath, picArr);
-        let scrollCount = 0;
+        const thisPass = this;
+        let passPi = piPath;
         Object.assign(element.style, {
             background: `url(${piPath})`,
             position: 'fixed',
@@ -65,29 +67,24 @@ export class BackgroundDancer extends Component {
         });
         window.onclick = function(){console.log('hi')};
         window.addEventListener('scroll', function(){console.log('hi')});
-        // window.onscroll = function(){console.log('why')};
-        // window.onscroll =  function(){
-        //     scrollCount++;
-        //     console.log('scrolled');
-        //     if(scrollCount > 150){
-        //         const piPath = this.picRando(prePath, picArr, passPi, this.picRando);
-        //         const passPi = piPath;
-        //         this.fadeGround(true, false, 660, 1000, this.fadeGround,
-        //             function(){
-        //                 Object.assign(element.style, {
-        //                     background: `url(${piPath})`,
-        //                     position: 'fixed',
-        //                     backgroundSize: '100% 100vh',
-        //                     height: '100%',
-        //                     minHeight: '100%',
-        //                     width: '100%',
-        //                     zIndex: '-2'
-        //                 });
-        //             }
-        //         );
-        //         scrollCount = 0;
-        //     }
-        // };
+        window.onscroll = function(){console.log('why')};
+        setInterval(function(){
+            const piPath = thisPass.picRando(prePath, picArr, passPi, thisPass.picRando);
+            passPi = piPath;
+            thisPass.fadeGround(true, false, 440, 1000, thisPass.fadeGround,
+                function(){
+                    Object.assign(element.style, {
+                        background: `url(${piPath})`,
+                        position: 'fixed',
+                        backgroundSize: '100% 100vh',
+                        height: '100%',
+                        minHeight: '100%',
+                        width: '100%',
+                        zIndex: '-2'
+                    });
+                }
+            );
+        }, 14000);
     };
 
     render(){
