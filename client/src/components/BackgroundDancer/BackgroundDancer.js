@@ -90,7 +90,7 @@ export class BackgroundDancer extends Component {
     render(){
         return(
             <div className='diffground' id='diffground'>
-                <div className='diffground2' id='diffground2'><div>hello</div></div>
+                <div className='diffground2' id='diffground2'></div>
             </div>
         );
     };
