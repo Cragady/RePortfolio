@@ -1,6 +1,7 @@
 const mongoose = require('mongoose'),
     db = require('../models'),
-    portData = require('./portData.json');
+    portData = require('./portData.json'),
+    pa = process.argv;
 
 mongoose.connect(
     process.env.MONGODB_URI ||
@@ -19,7 +20,7 @@ function seeder(iterator, cb){
             })
         .then(data =>{
             console.log(data + ' inserted');
-            console.log(item.place + ' inserted');
+            console.log(item.title + ' inserted');
             if(iterator < portData.length - 1){
                 iterator++;
                 cb(iterator, cb);
@@ -49,10 +50,16 @@ function seeder(iterator, cb){
 };
 
 function dbChanger(){
-    db.PicData.remove({})
-    .then(() =>{
+    if(pa[2]){
+        console.log("hit the danger button!");
+        db.PicData.remove({})
+        .then(() =>{
+            seeder(0, seeder);
+        });
+    } else {
+        console.log("did not hit the danger button D:");
         seeder(0, seeder);
-    });
+    };
 };
 
 dbChanger();
