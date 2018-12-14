@@ -19,8 +19,9 @@ function seeder(iterator, cb){
                 '$setOnInsert': {'title': item.title}
             })
         .then(data =>{
-            console.log(data + ' inserted');
-            console.log(item.title + ' inserted');
+            // the below comments are kept for checking the insertion
+            // console.log(data + ' inserted');
+            // console.log(item.title + ' inserted');
             if(iterator < portData.length - 1){
                 iterator++;
                 cb(iterator, cb);
