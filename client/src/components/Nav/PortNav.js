@@ -1,8 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import DropAc from '../Button/DropAc';
-import SignModal from '../SignModal/SignModal';
-import A from '../AnchorTag/AnchorTag';
 import './Nav.css';
 
 export const PortNav = props =>{

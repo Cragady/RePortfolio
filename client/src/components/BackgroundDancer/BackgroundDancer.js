@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import './BackgroundDancer.css';
 
 export class BackgroundDancer extends Component {
-    constructor(props){
-        super(props);
-    };
+    // constructor(props){
+    //     super(props);
+    // };
 
     componentDidMount(){
         this.diffground();
@@ -65,9 +65,6 @@ export class BackgroundDancer extends Component {
             width: '100%',
             zIndex: '-2'
         });
-        window.onclick = function(){console.log('hi')};
-        window.addEventListener('scroll', function(){console.log('hi')});
-        window.onscroll = function(){console.log('why')};
         setInterval(function(){
             const piPath = thisPass.picRando(prePath, picArr, passPi, thisPass.picRando);
             passPi = piPath;

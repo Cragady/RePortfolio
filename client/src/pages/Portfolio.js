@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {PortNav} from '../components/Nav';
+import Ports from '../components/Ports/Ports';
 import API from '../utils/API';
 import './Pages.css';
 
@@ -7,7 +8,8 @@ export class Portfolio extends Component{
     constructor(props){
         super(props);
         this.state={
-            picData: []
+            picData: [],
+            filterType: ''
         };
     };
 
@@ -33,22 +35,29 @@ export class Portfolio extends Component{
 
     render(){
         const picLinks = this.state.picData;
+        console.log(this.state.picData);
+        let picLay;
         return(
             <section className='container'>
                 <PortNav />
                 <div id='my-ports' className='row'>
                     {picLinks !== undefined && 
                         picLinks.map(pics =>{
-                            return( 
-                                <div className='col p-0 p-img-div my-1 mx-auto' key={pics._id} onMouseOver={() => {this.picMouse(pics.title)}} onMouseLeave={() => {this.picUnMouse(pics.title)}}>
-                                    <img className='portimage' src={pics.piPath} alt={pics.title + ' project'}/>
-                                    <div className='view-destroyer' id={'cover-' + pics.title}>
-                                        <h1 className='col-12 destroyer-text'>{pics.title}</h1>
-                                        <a className='col another-a' href={pics.link} target='_blank'>App</a>
-                                        <a className='col another-a' href={pics.repo} target='_blank'>Repository</a>
-                                    </div>
-                                </div>
+                            const {_id, piPath, title, link, repo} = pics;
+                            this.state.filterType === '' ? 
+                                picLay = (
+                                    <Ports _id={_id} key={_id} piPath={piPath} 
+                                    title={title} link={link} repo={repo} 
+                                onMouseOver={() => this.picMouse(title)} onMouseLeave={() => {this.picUnMouse(title)}} />
+                                )
+                            : !pics.tags.includes(this.state.filterType) ? 
+                                picLay = null 
+                            : picLay = (
+                                <Ports _id={_id} key={_id} piPath={piPath} 
+                                    title={title} link={link} repo={repo} 
+                                onMouseOver={() => this.picMouse(title)} onMouseLeave={() => {this.picUnMouse(title)}} />
                             );
+                            return(picLay);
                         })    
                     }
                 </div>
