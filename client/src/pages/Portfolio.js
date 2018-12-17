@@ -19,9 +19,10 @@ export class Portfolio extends Component{
     };
 
     filterChange = event =>{
+        const name = event.target.name;
         const value = event.target.value;
         this.setState({
-            filterType: value
+            filterType: name
         });
     };
 
@@ -46,7 +47,7 @@ export class Portfolio extends Component{
         let picLay;
         return(
             <section className='container'>
-                <PortNav buttontext={this.state.filterType} onClick={this.filterChange} />
+                <PortNav fType={this.state.filterType} onClick={this.filterChange} />
                 <div id='my-ports' className='row'>
                     {picLinks !== undefined && 
                         picLinks.map(pics =>{
