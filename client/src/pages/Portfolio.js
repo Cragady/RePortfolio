@@ -9,12 +9,20 @@ export class Portfolio extends Component{
         super(props);
         this.state={
             picData: [],
-            filterType: ''
+            filterType: '',
+            filterName: ''
         };
     };
 
     componentDidMount(){
         this.getPicInfo();
+    };
+
+    filterChange = event =>{
+        const value = event.target.value;
+        this.setState({
+            filterType: value
+        });
     };
 
     getPicInfo = () =>{
@@ -35,11 +43,10 @@ export class Portfolio extends Component{
 
     render(){
         const picLinks = this.state.picData;
-        console.log(this.state.picData);
         let picLay;
         return(
             <section className='container'>
-                <PortNav />
+                <PortNav buttontext={this.state.filterType} onClick={this.filterChange} />
                 <div id='my-ports' className='row'>
                     {picLinks !== undefined && 
                         picLinks.map(pics =>{
@@ -50,7 +57,7 @@ export class Portfolio extends Component{
                                     title={title} link={link} repo={repo} 
                                 onMouseOver={() => this.picMouse(title)} onMouseLeave={() => {this.picUnMouse(title)}} />
                                 )
-                            : !pics.tags.includes(this.state.filterType) ? 
+                            : !pics.tags.includes(this.state.filterType.toLowerCase()) ? 
                                 picLay = null 
                             : picLay = (
                                 <Ports _id={_id} key={_id} piPath={piPath} 

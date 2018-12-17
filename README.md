@@ -1,12 +1,5 @@
 [Application](https://evening-beach-49814.herokuapp.com/portfolio)
 
-# Things to add
-
-* 01 code: "https://github.com/Cragady/Cragady.github.io" app: "https://cragady.github.io/"
-* 02.1 code: "https://github.com/Cragady/Bootstrap-Portfolio" app: "https://cragady.github.io/Bootstrap-Portfolio/"
-* 02.2 code: "https://github.com/Cragady/Responsive-Portfolio" app: "https://cragady.github.io/Responsive-Portfolio/"
-* 09 code: "https://github.com/Cragady/Portfolio" app: "https://cragady.github.io/Portfolio/"
-
 # Deploying/Re-deploying
 
 Remember when you're pushing changes to heroku, it will keep the database the exact same, you have to run the seed manually (which is probably better, even if it was accidental).

@@ -1,6 +1,17 @@
 import React from 'react';
 import './Nav.css';
 
+//temporary array for laying the buttons,
+//I will probably find a smarter way to do this later
+
+const butArr = ['portfolio', 'no-script', 'basic', 
+    'html', 'css', 'JavaScript', 'vanilla-js', 
+    'bootstrap', 'jQuery', 'firebase', 'api', 'hardware-interface',
+    'node', 'cli', 'npm', 'MySQL', 'express', 'handlebars',
+    'sequelize', 'orm', 'MongoDB', 'passport', 'user-login',
+    'mongoose', 'es6', 'react', 'yarn', 'mern', 'axios',
+];
+
 export const PortNav = props =>{
     return(
         <section className='port-head rounded'>
@@ -10,15 +21,13 @@ export const PortNav = props =>{
                 <ul className='nav nav-cust-port'>
                     <li className='btn no-btn ml-auto mr-3' >Project type:</li>
                     <li className='mr-auto' >
-                    <div className="dropdown">
-                        <button className="btn btn-cust-prof dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {props.buttontext ? props.buttontext : "Filter"}
-                        </button>
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <button className="dropdown-item">Action</button>
-                            <button className="dropdown-item">Another action</button>
-                            <button className="dropdown-item">Something else here</button>
-                        </div>
+                        <div className="form-group">
+                            <select className='form-control' onChange={props.onClick}>
+                                <option defaultValue onClick={props.onClick} value='' >All</option>
+                                {butArr.map(types =>{
+                                    return(<option key={types + '-skills'} onClick={props.onClick}>{types}</option>)
+                                })}
+                            </select>
                         </div>
                     </li>
                 </ul>
