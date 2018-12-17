@@ -39,10 +39,6 @@
     box-shadow: 2px 4px 9px 3px rgba(39, 44, 42, 0.5);
 }
 
-.skill-dropdown{
-    max-height: 15px;
-}
-
 .no-btn{
     color: #fff;
     cursor: default!important;

@@ -12,7 +12,7 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # To Do
 
-* Enable filtering functionality on the Portfolio Page
+* With filtering, make a dropdown div. Expand div to show a lot of clickable buttons for the skills. Maybe look into having an input that can be typed into as well. Update the input to reflect button push.
 * Add a skills page
 * Make that page cool
 * More content to home page?
