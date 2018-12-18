@@ -28,14 +28,6 @@ export const PortNav = props =>{
             <h1 className='text-white'>Projects</h1>
 
             <div className='my-1 nav-cust-port'>
-                {/* <ul className='nav mb-5'>
-                    <li className='btn no-btn ml-auto mx-auto' >Project type:</li>
-                    <li className='mr-auto mx-auto mb-2 input-parent' >
-                        //<input className='btn-ports' placeholder={props.fType ? props.fType : 'All'}></input>
-                        <input className='form-control btn-ports'></input>
-                        <input className='form-control autocomplete btn-ports' disabled value='test' />
-                    </li>
-                </ul> */}
                 <div>Filtered By: </div>
                 <div className='btn-acc-holder mx-auto'>
                     <button className='btn dropdown-toggle btn-accordion' onClick={accordionBtn}>{props.fType ? props.fType : 'All'}</button>
