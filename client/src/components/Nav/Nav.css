@@ -39,8 +39,48 @@
     box-shadow: 2px 4px 9px 3px rgba(39, 44, 42, 0.5);
 }
 
+/* #show-hide{
+    overflow: auto;
+} */
+
 .btn-in-hiding{
-    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.input-parent{
+    position: relative;
+    padding: 0;
+    min-width: 150px;
+    max-width: 30%;
+}
+
+.btn-ports{
+    position: absolute;
+    z-index: 7;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.btn-ports:focus{
+    background-color: initial;
+}
+
+.autocomplete{
+    color: silver;
+    background-color: white;
+    z-index: 1;
+}
+
+.btn-acc-holder{
+    display: table;
+    overflow: auto;
+    clear: both;
+}
+
+.btn-ports{
+    display: table-row;
 }
 
 .no-btn{
