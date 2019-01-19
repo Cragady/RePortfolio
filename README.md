@@ -18,6 +18,7 @@ Really, probably much better this way, so that it won't seed the database with e
 * More content to home page?
 * ~Make accordion sidebar for nav-bar; will only expand when on the main page~
 * prettify it (this may be the heaviest time sink? Maybe)
+* Add downloadable resume to portfolio
 
 # Possible Ideas
 

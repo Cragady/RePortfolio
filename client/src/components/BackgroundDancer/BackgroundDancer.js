@@ -30,18 +30,18 @@ export class BackgroundDancer extends Component {
                 background: 'rgba(0, 0, 0, 1)'
             });
             middle();
-            setTimeout(function(){cb(false, true, 1000, 440, cb)}, 160);
+            setTimeout(function(){cb(false, true, 1000, 770, cb)}, 600);
             return;
         } else if(runner === finisher && middle === undefined){
             Object.assign(element.style, {
-                background: 'rgba(0, 0, 0, 0.440)'
+                background: 'rgba(0, 0, 0, 0.770)'
             });
             return;
         };
         Object.assign(element.style, {
             background: `rgba(0, 0, 0, 0.${runner})`
         });
-        setTimeout(function(){cb(fRun, fBack, runner, finisher, cb, middle)}, 25);
+        setTimeout(function(){cb(fRun, fBack, runner, finisher, cb, middle)}, 35);
     };
 
     diffground = () =>{
@@ -68,7 +68,7 @@ export class BackgroundDancer extends Component {
         setInterval(function(){
             const piPath = thisPass.picRando(prePath, picArr, passPi, thisPass.picRando);
             passPi = piPath;
-            thisPass.fadeGround(true, false, 440, 1000, thisPass.fadeGround,
+            thisPass.fadeGround(true, false, 770, 1000, thisPass.fadeGround,
                 function(){
                     Object.assign(element.style, {
                         background: `url(${piPath})`,
