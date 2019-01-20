@@ -20,6 +20,14 @@
     max-width: 50px;
 }
 
+.download-text{
+    color: rgb(132, 221, 236);
+}
+
+.download-text:hover{
+    color: rgb(182, 255, 206);
+}
+
 .text-diff{
     color: rgb(182, 255, 206);
     font-weight: bold;

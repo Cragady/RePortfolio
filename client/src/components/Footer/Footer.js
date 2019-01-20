@@ -12,8 +12,8 @@ export const Footer = props =>{
                 </div>
                 <div className='col row'>
                     <p className='col-12'>Resume:</p>
-                    <a href='/downloads/Craig-Wright-Resume.docx' className='col-12'>Word Document</a>
-                    <a href='/downloads/Craig-Wright-Resume.pdf' className='col-12'>PDF</a>
+                    <a href='/downloads/Craig-Wright-Resume.docx' className='col-12 download-text'>Word Document</a>
+                    <a href='/downloads/Craig-Wright-Resume.pdf' className='col-12 download-text'>PDF</a>
                 </div>
                 <p className='mb-0 col-12'>Email me at: <span className='text-diff'>craigwright2048@gmail.com</span></p>
                 <p className='mb-0 col-12'>Call/Text: <span className='text-diff'>(801) 808-0280</span></p>
