@@ -46,9 +46,9 @@ export class Portfolio extends Component{
         const picLinks = this.state.picData;
         let picLay;
         return(
-            <section className='container'>
+            <section className='container px-0'>
                 <PortNav fType={this.state.filterType} onClick={this.filterChange} />
-                <div id='my-ports' className='row'>
+                <div id='my-ports' className='container px-0 no-gutters row'>
                     {picLinks !== undefined && 
                         picLinks.map(pics =>{
                             const {_id, piPath, title, link, repo} = pics;
