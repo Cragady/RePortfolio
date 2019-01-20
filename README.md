@@ -12,13 +12,12 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # To Do
 
-* With filtering, make a dropdown div. Expand div to show a lot of clickable buttons for the skills. Maybe look into having an input that can be typed into as well. Update the input to reflect button push.
-* Add a skills page
+* With filtering, make a dropdown div. Expand div to show a lot of clickable buttons for the skills. Maybe look into having an input that can be typed into as well. Update the input to reflect button push. (partially done)
+* Add a skills page(maybe add this in a little thing in home page)
 * Make that page cool
 * More content to home page?
 * ~Make accordion sidebar for nav-bar; will only expand when on the main page~
 * prettify it (this may be the heaviest time sink? Maybe)
-* Add downloadable resume to portfolio
 
 # Possible Ideas
 
