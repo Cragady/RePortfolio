@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
-import {Portfolio, Main} from "../pages";
 import './Pages.css';
 
 export class Home extends Component{
     render(){
         return(
-            <section>
-
             <section className="container cont-cust">
                 {/* <div className="card mt-5"> */}
 
@@ -40,10 +37,6 @@ export class Home extends Component{
                         becoming a web developer.
                     </p> */}
                 {/* </div> */}
-            </section>
-            <Portfolio />
-            <Main />
-            
             </section>
         );
     };
