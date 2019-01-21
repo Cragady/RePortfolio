@@ -35,11 +35,9 @@ export class Footer extends Component{
                     </div>
                     <p className='mb-0 col-12'> <span className='email' name='email' onClick={this.copyText}>Email me at: &nbsp;
                         <input id='email' name='email' className='text-diff' value='craigwright2048@gmail.com' readOnly />
-                        <span className='email-hover' name='email'>Click to Copy</span>
                     </span></p>
                     <p className='mb-0 col-12'> <span className='phone' name='phone' onClick={this.copyText}>Call/Text: &nbsp;
                         <input id='phone' name='phone' className='text-diff' value='(801) 808-0280' readOnly />
-                        <span className='phone-hover' name='phone'>Click to Copy</span>
                     </span></p>
                 </section>
             </footer>

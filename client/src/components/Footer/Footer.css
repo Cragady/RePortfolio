@@ -47,22 +47,3 @@
 #phone{
     max-width: 86px;
 }
-
-.phone-hover, .email-hover{
-    position: absolute;
-    visibility: hidden;
-    width: 130px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-}
-
-.email:hover .email-hover{
-    visibility: visible;
-}
-
-.phone:hover .phone-hover{
-    visibility: visible;
-}
