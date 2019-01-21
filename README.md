@@ -25,3 +25,4 @@ Really, probably much better this way, so that it won't seed the database with e
 * Click to reveal a word that flies to edge of div. It stops at edge then disintigrates.
 * Keep with the database idea (only have login for me)
 * have the path salted, hashed, and stored (can only be linked if you know the path, the code won't reveal the path)
+* On click to copy to clipboard for email and number

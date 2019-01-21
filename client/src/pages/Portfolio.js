@@ -20,7 +20,6 @@ export class Portfolio extends Component{
 
     filterChange = event =>{
         const name = event.target.name;
-        const value = event.target.value;
         this.setState({
             filterType: name
         });

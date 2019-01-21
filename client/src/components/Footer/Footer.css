@@ -32,3 +32,18 @@
     color: rgb(182, 255, 206);
     font-weight: bold;
 }
+
+#email, #phone{
+    padding: 0;
+    background-color: inherit;
+    cursor: copy;
+    border: none;
+}
+
+#email{
+    min-width: 164px;
+}
+
+#phone{
+    max-width: 86px;
+}
