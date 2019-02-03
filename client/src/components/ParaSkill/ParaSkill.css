@@ -1,0 +1,23 @@
+.paraskill-container{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.paraskill{
+    position: absolute;
+    bottom: 100%;
+    height: 200%;
+    width: 100%;
+    z-index: -2;
+    background: url('https://www.goodmorningimagesforlover.com/wp-content/uploads/2018/10/dark-side-cool-background-1066x617.jpg') center center / cover no-repeat;
+}
+
+.para-p{
+    position: absolute;
+    bottom: 0;
+    background: white;
+    color: black;
+    z-index: -1;
+}
