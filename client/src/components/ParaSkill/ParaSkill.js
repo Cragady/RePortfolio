@@ -4,9 +4,18 @@ import './ParaSkill.css';
 export class ParaSkill extends Component{
 
     componentDidMount(){
+        
+        window.addEventListener('scroll', this.paraPara);
+    };
+
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.paraPara);
+    };
+
+    paraPara = () =>{
         const paraskillElements = document.getElementsByClassName('paraskill'),
             paraskillQuantity = paraskillElements.length;
-            window.addEventListener('scroll', () => this.paraskillScroll(paraskillElements, paraskillQuantity));
+        this.paraskillScroll(paraskillElements, paraskillQuantity);
     }
 
     paraskillScroll = (elem, quant) =>{
