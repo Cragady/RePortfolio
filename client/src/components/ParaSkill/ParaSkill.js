@@ -15,6 +15,7 @@ export class ParaSkill extends Component{
         const elRect = el.getBoundingClientRect(),
             bodRect = document.body.getBoundingClientRect(),
             top = elRect.bottom - bodRect.top;
+            
         return top;
     };
 
@@ -29,8 +30,9 @@ export class ParaSkill extends Component{
         window.requestAnimationFrame(function(){
             for(let i = 0; i < paraskillQuantity; i++){
                 const currentElement = paraskillElements[i],
-                scrolled = window.pageYOffset || document.documentElement.scrollTop,
-                scrollSave = currentElement.dataset.scrollSave;
+                    scrolled = window.pageYOffset || document.documentElement.scrollTop,
+                    scrollSave = currentElement.dataset.scrollSave;
+
                 if (scrolled < scrollSave){
                     currentElement.style.transform = `translate3d(0, ${scrolled * 1.6}px, 0)`;
                 } else if (pBottom === cBottom || pBottom < cBottom){
