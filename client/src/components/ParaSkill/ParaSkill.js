@@ -23,7 +23,7 @@ export class ParaSkill extends Component{
     };
 
     positionListener = (s, sTar, cBot, pBot, cElem) =>{
-        if((s > sTar) && (cBot < pBot) || (cBot > pBot)){
+        if((s > sTar) && ((cBot < pBot) || (cBot > pBot))){
             cElem.style.transform = `translate3d(0, ${sTar * 1.6}px, 0)`;
         };
     }
@@ -36,12 +36,6 @@ export class ParaSkill extends Component{
         return dir;
     };
 
-    topInit = () =>{
-        const sk = document.querySelector('.paraskill');
-        const sb = this.offset(sk, 'bottom');
-        console.log(sb, 'ssss bbbb');
-    };
-
     calculateRScroll = (scrolled, reverser) =>{
         const seClassPlace = document.getElementsByClassName('paraskill')[0],
             pBottom = document.querySelector('.paraskill-container'),
@@ -50,10 +44,8 @@ export class ParaSkill extends Component{
         returner;
 
         if((reverser === 'true') && (oPos !== undefined)){
-            console.log('reverse! reverse!');
             oPos = parseFloat(oPos);
             const reverse = (pottom - oPos) / 1.6;
-            console.log('reverse', reverse, "then scroll", scrolled);
             returner = reverse;
         };
         if((oPos !== undefined) && (reverser !== 'true')){
