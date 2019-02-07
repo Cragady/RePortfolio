@@ -14,9 +14,7 @@ export class ParaSkill extends Component{
                 parDiv = document.querySelector('.paraskill-container');
             let picPos;
 
-            console.log(passThis(parDiv, 'top'));
             picPos = passThis(movePic, 'bottom');
-            console.log(picPos);
             movSel[0].dataset.origpos = picPos;
         });
     };
