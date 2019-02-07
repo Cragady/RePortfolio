@@ -10,10 +10,13 @@ export class ParaSkill extends Component{
 
         setTimeout(function(){
             const movSel = document.getElementsByClassName('paraskill'),    
-                movePic = document.querySelector('.paraskill');
+                movePic = document.querySelector('.paraskill'),
+                parDiv = document.querySelector('.paraskill-container');
             let picPos;
 
+            console.log(passThis(parDiv, 'top'));
             picPos = passThis(movePic, 'bottom');
+            console.log(picPos);
             movSel[0].dataset.origpos = picPos;
         });
     };
@@ -22,9 +25,9 @@ export class ParaSkill extends Component{
         window.removeEventListener('scroll', this.paraskillScroll);
     };
 
-    positionListener = (s, sTar, cBot, pBot, cElem) =>{
+    positionListener = (s, sTar, cBot, pBot, cElem, sSpeed) =>{
         if((s > sTar) && ((cBot < pBot) || (cBot > pBot))){
-            cElem.style.transform = `translate3d(0, ${sTar * 1.6}px, 0)`;
+            cElem.style.transform = `translate3d(0, ${sTar * sSpeed}px, 0)`;
         };
     }
 
@@ -36,7 +39,7 @@ export class ParaSkill extends Component{
         return dir;
     };
 
-    calculateRScroll = (scrolled, reverser) =>{
+    calculateRScroll = (scrolled, sSpeed, reverser) =>{
         const seClassPlace = document.getElementsByClassName('paraskill')[0],
             pBottom = document.querySelector('.paraskill-container'),
             pottom = this.offset(pBottom, 'bottom');
@@ -45,13 +48,13 @@ export class ParaSkill extends Component{
 
         if((reverser === 'true') && (oPos !== undefined)){
             oPos = parseFloat(oPos);
-            const reverse = (pottom - oPos) / 1.6;
+            const reverse = (pottom - oPos) / sSpeed;
             returner = reverse;
         };
         if((oPos !== undefined) && (reverser !== 'true')){
             oPos = parseFloat(oPos);
             
-            const right = (((scrolled * 1.6) + oPos) - pottom) * -1;
+            const right = (((scrolled * sSpeed) + oPos) - pottom) * -1;
             returner = right;
         };
         return returner;
@@ -63,6 +66,7 @@ export class ParaSkill extends Component{
             paraskillQuantity = paraskillElements.length,
             pElem = document.querySelector('.paraskill-container'),
             pBottom = this.offset(pElem, 'bottom'),
+            pTop = this.offset(pElem, 'top'),
             cBottom = this.offset(sePlace, 'bottom'),
             sCalc = this.calculateRScroll,
             thisPass = this;
@@ -71,15 +75,16 @@ export class ParaSkill extends Component{
             for(let i = 0; i < paraskillQuantity; i++){
                 const currentElement = paraskillElements[i],
                     scrolled = window.pageYOffset || document.documentElement.scrollTop,
-                    scrollPoint = sCalc(scrolled),
-                    scrollComparator = sCalc(scrolled, 'true');
+                    scrollSpeed = 1.6 * (418.375 / pTop),
+                    scrollPoint = sCalc(scrolled, scrollSpeed),
+                    scrollComparator = sCalc(scrolled, scrollSpeed, 'true');
 
                 if (scrollPoint > 0){
-                    currentElement.style.transform = `translate3d(0, ${scrolled * 1.6}px, 0)`;
+                    currentElement.style.transform = `translate3d(0, ${scrolled * scrollSpeed}px, 0)`;
                     currentElement.style.bottom = 100 + '%';
                 } else {
                     currentElement.style.bottom = pBottom;
-                    thisPass.positionListener(scrolled, scrollComparator, cBottom, pBottom, currentElement);
+                    thisPass.positionListener(scrolled, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed);
                 };
             };
         });
