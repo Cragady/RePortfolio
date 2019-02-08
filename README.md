@@ -12,6 +12,19 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # To Do
 
+# Active
+
+* Keep laying out homepage
+* Put icon pic info into database (seed it! `skillData.json/skillSeedDB.js`)
+* create component for laying out icons
+* write a `function to set height` of 'parent div' for paraskill (will be dependant on pic sizes and how many pics per row, use scripting to figure it out);
+* make homepage more like a resume
+* Write out `API` for accessing the pic locations from database
+* Change scripts in `package.json` to include the new seeds for database push
+* `Deploy!!`
+
+### Passive
+
 * With filtering, make a dropdown div. Expand div to show a lot of clickable buttons for the skills. Maybe look into having an input that can be typed into as well. Update the input to reflect button push. (partially done)
 * Add a skills page(maybe add this in a little thing in home page)
 * Make that page cool
