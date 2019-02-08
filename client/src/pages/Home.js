@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
 import { ParaSkill } from '../components/ParaSkill';
 import './Pages.css';
+import API from '../utils/API';
 
 export class Home extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            picData: []
+        }
+    };
+
+    getPicInfo = () =>{
+        API.skillPics().then(res =>{
+            this.setState({
+                picData: res.data
+            });
+        });
+    };
+
     render(){
         return(
             <section className="container cont-cust">
