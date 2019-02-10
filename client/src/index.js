@@ -13,7 +13,7 @@ if(window.location.hostname !== 'localhost' && window.location.hostname !== '127
             window.location.protocol = 'https:'
             break;
         default:
-            console.log('err');
+            return;
     };
 };
 
