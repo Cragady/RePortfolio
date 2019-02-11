@@ -40,11 +40,15 @@
     top: 0;
     height: 100%;
     width: 100%;
-    color: white;
-    font-size: 8em;
     background: rgba(0, 0, 0, 0.733);
     mix-blend-mode: multiply;
     z-index: -3;
+}
+
+.skill-word{
+    font-size: 10vw;
+    color: white;
+    /* opacity: 1; */
 }
 
 @-webkit-keyframes Gradient{

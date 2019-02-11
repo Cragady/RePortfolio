@@ -91,7 +91,7 @@ export class ParaSkill extends Component{
     render(){
         return(
             <section className='paraskill-container rounded'>
-                <section className='para-sibling'><div className='ps-child d-flex align-items-center justify-content-center'>Skills</div></section>
+                <section className='para-sibling'><div className='ps-child d-flex justify-content-center'><h1 className='skill-word col-12'>Skillssfddjskl</h1></div></section>
                 <div className='paraskill align-items-end'>
                     <section className='para-elem'>
                         <button>Push me</button>
