@@ -28,23 +28,41 @@ const testArray = [
 export class ParaSkill extends Component{
 
     componentDidMount(){
-        const passThis = this.offset;
 
         window.addEventListener('scroll', this.paraskillScroll);
-
-        setTimeout(function(){
-            const movSel = document.getElementsByClassName('paraskill'),    
-                movePic = document.querySelector('.paraskill'),
-                parDiv = document.querySelector('.paraskill-container');
-            let picPos;
-
-            picPos = passThis(movePic, 'bottom');
-            movSel[0].dataset.origpos = picPos;
-        });
+        window.addEventListener('resize', this.bottomSetter);
+        this.bottomSetter();
     };
 
     componentWillUnmount(){
         window.removeEventListener('scroll', this.paraskillScroll);
+        window.removeEventListener('resize', this.bottomSetter);
+    };
+
+    bottomSetter = () =>{
+        const thiss = this;
+
+        setTimeout(function(){
+            const {paraskillElements, 
+                sePlace,
+                paraskillQuantity,
+                pElem,
+                pBottom,
+                pTop,
+                cBottom,
+                sCalc,
+                scrolled,
+                scrollSpeed,
+                scrollPoint,
+                scrollComparator} = thiss.paraskillScroll(true),
+            currentElement = paraskillElements[0];
+
+        if(paraskillElements[0].dataset.origpos === undefined){
+            paraskillElements[0].dataset.origpos = cBottom;
+        };
+        thiss.positionListener(scrolled, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed);
+        console.log(cBottom, pBottom);
+    });
     };
 
     positionListener = (s, sTar, cBot, pBot, cElem, sSpeed) =>{
@@ -82,7 +100,7 @@ export class ParaSkill extends Component{
         return returner;
     };
 
-    paraskillScroll = () =>{
+    paraskillScroll = (grabber) =>{
         const paraskillElements = document.getElementsByClassName('paraskill'),
             sePlace = document.querySelector('.paraskill'),
             paraskillQuantity = paraskillElements.length,
@@ -91,15 +109,32 @@ export class ParaSkill extends Component{
             pTop = this.offset(pElem, 'top'),
             cBottom = this.offset(sePlace, 'bottom'),
             sCalc = this.calculateRScroll,
+            scrolled = window.pageYOffset || document.documentElement.scrollTop,
+            scrollSpeed = 1.6 * (418.375 / pTop),
+            scrollPoint = sCalc(scrolled, scrollSpeed),
+            scrollComparator = sCalc(scrolled, scrollSpeed, 'true'),
             thisPass = this;
+
+            if(grabber === true){
+                return grabber = {
+                    paraskillElements, 
+                    sePlace,
+                    paraskillQuantity,
+                    pElem,
+                    pBottom,
+                    pTop,
+                    cBottom,
+                    sCalc,
+                    scrolled,
+                    scrollSpeed,
+                    scrollPoint,
+                    scrollComparator
+                };
+            };
 
         window.requestAnimationFrame(function(){
             for(let i = 0; i < paraskillQuantity; i++){
-                const currentElement = paraskillElements[i],
-                    scrolled = window.pageYOffset || document.documentElement.scrollTop,
-                    scrollSpeed = 1.6 * (418.375 / pTop),
-                    scrollPoint = sCalc(scrolled, scrollSpeed),
-                    scrollComparator = sCalc(scrolled, scrollSpeed, 'true');
+                const currentElement = paraskillElements[i];
 
                 if (scrollPoint > 0){
                     currentElement.style.transform = `translate3d(0, ${scrolled * scrollSpeed}px, 0)`;
