@@ -14,7 +14,8 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # Active
 
-* include animations for skills, happens on click, when the bottom of parallax is at bottom of parent
+* include animations for skills, happens on click, when the bottom of parallax is at bottom of parent; will replace the filter background in front of the gradient
+* fix names of icons
 * Keep laying out homepage
 * Put icon pic info into database (seed it! `skillData.json/skillSeedDB.js`)
 * expand component for laying out icons
