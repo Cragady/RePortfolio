@@ -1,5 +1,27 @@
 import React, { Component } from 'react';
+import Skills from "./Skills";
 import './ParaSkill.css';
+
+const testArray = ['ajax_logo',
+    'API',
+    'Bootstrap',
+    'CSS3',
+    'Express',
+    'Firebase',
+    'git',
+    'Handlebars',
+    'Heroku',
+    'HTML5',
+    'JavaScript',
+    'jQuery',
+    'MERN',
+    'MongoDB',
+    'Mongoose',
+    'MySQL',
+    'Node',
+    'React',
+    'REST',
+    'Sequelize'];
 
 export class ParaSkill extends Component{
 
@@ -88,14 +110,33 @@ export class ParaSkill extends Component{
         });
     };
 
+    wordHandler = (e) =>{
+        const {target} = e;
+        const {dataset, alt, src} = target;
+        const {skill} = dataset;
+        console.log(target, skill, alt, src);
+        document.querySelector('.skill-word').textContent = skill;
+    }
+
     render(){
         return(
             <section className='paraskill-container rounded'>
-                <section className='para-sibling'><div className='ps-child d-flex justify-content-center'><h1 className='skill-word col-12'>Skillssfddjskl</h1></div></section>
+                <section className='para-sibling'>
+                    <div className='ps-child d-flex justify-content-center'>
+                        <h1 className='skill-word col-12'>Skills</h1>
+                    </div>
+                </section>
                 <div className='paraskill align-items-end'>
                     <section className='para-elem'>
-                        <button>Push me</button>
-                        <p>Hello</p>
+
+                        {testArray.map(skill =>{
+                            return (
+                                <Skills key={skill} 
+                                    img={`/images/skills/${skill}.png`} skill={skill} 
+                                    funkPass={this.wordHandler}
+                                />
+                            );
+                        })}
                     </section>
                 </div>
             </section>

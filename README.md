@@ -14,9 +14,10 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # Active
 
+* include animations for skills, happens on click, when the bottom of parallax is at bottom of parent
 * Keep laying out homepage
 * Put icon pic info into database (seed it! `skillData.json/skillSeedDB.js`)
-* create component for laying out icons
+* expand component for laying out icons
 * write a `function to set height` of 'parent div' for paraskill (will be dependant on pic sizes and how many pics per row, use scripting to figure it out);
 * make homepage more like a resume
 * Write out `API` for accessing the pic locations from database
