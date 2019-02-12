@@ -14,6 +14,7 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # Active
 
+* Make parallax-container div dynamically sized according to how many pictures there are
 * include animations for skills, happens on click, when the bottom of parallax is at bottom of parent; will replace the filter background in front of the gradient
 * fix names of icons
 * Keep laying out homepage
