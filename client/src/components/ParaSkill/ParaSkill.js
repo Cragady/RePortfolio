@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Skills from "./Skills";
 import './ParaSkill.css';
 
-const testArray = ['ajax_logo',
+const testArray = [
+    'AJAX',
     'API',
     'Bootstrap',
     'CSS3',
@@ -21,7 +22,8 @@ const testArray = ['ajax_logo',
     'Node',
     'React',
     'REST',
-    'Sequelize'];
+    'Sequelize'
+];
 
 export class ParaSkill extends Component{
 
