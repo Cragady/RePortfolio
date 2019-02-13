@@ -25,9 +25,6 @@ const testArray = [
     'Sequelize'
 ];
 
-//the starting top position will change, this is because of resizing. 
-//reverse scrolling effects to find original starting posistion
-
 export class ParaSkill extends Component{
 
     componentDidMount(){
@@ -75,44 +72,9 @@ export class ParaSkill extends Component{
         };
     };
 
-    bottomSetter2 = () =>{
-        if(window.outerWidth < 393){
-            const {paraskillElements, sePlace, paraskillQuantity,
-                pElem, pBottom, pTop, cBottom, sCalc,
-                scrolled, scrollSpeed, scrollPoint,
-                scrollComparator, offsetter} = this.paraskillScroll(true),
-                currentElement = paraskillElements[0];
-
-            if(paraskillElements[0].dataset.origpos === undefined){
-                paraskillElements[0].dataset.origpos = cBottom;
-            };
-            this.positionListener(scrollComparator + 1, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
-            this.positionListener(scrollComparator + 1, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
-        } else{
-            const {paraskillElements, sePlace, paraskillQuantity,
-                pElem, pBottom, pTop, cBottom, sCalc,
-                scrolled, scrollSpeed, scrollPoint,
-                scrollComparator, offsetter} = this.paraskillScroll(true),
-            currentElement = paraskillElements[0];
-
-            if(paraskillElements[0].dataset.origpos === undefined){
-                paraskillElements[0].dataset.origpos = cBottom;
-            };
-            this.positionListener(scrolled, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
-            this.positionListener(scrolled, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
-        };
-    };
-
     positionListener = (s, sTar, cBot, pBot, cElem, sSpeed, ofS) =>{
         if(s >= sTar){
-            // cElem.style.transform = `translate3d(0, ${Math.round(sTar * sSpeed * ofS)}px, 0)`;
             cElem.style.transform = `translate3d(0, 500px, 0)`;
-            // cElem.style.bottom = pBot;
-            // if(window.outerWidth > 393){
-                // if(cBot < pBot || cBot > pBot){
-                    
-                // }
-            // }
         };
     };
 
@@ -149,26 +111,12 @@ export class ParaSkill extends Component{
                 case type === 'pDivPos':
                     const bottomsUp = this.offset(pBottom, 'bottom', 'bott'),
                     scrollTar = (pottom - oPos) / sSpeed,
-                    scrollLeft = (bottomsUp + scrolled) * -1,
-                    right2 = (((scrolled * sSpeed) + oPos) - pottom) * -1,
-                    countDown = scrollTar - scrolled,
                     scrollPoss = document.getElementsByTagName('body')[0].scrollHeight - window.innerHeight;
                     if(scrollTar / scrollPoss <= 1){
                         returner = 1;
                     } else {
                         returner = scrollTar / scrollPoss;
                     };
-                    // if(returner != 0){
-                    //     console.log(`
-                    //     ----------------------
-            
-                    //     da scalcer says pos is
-                    //     ${scrolled}
-                    //     ${scrollTar}
-                    //     ${scrollLeft}      ${right2}    ${countDown}
-                    //     scrollPoss: ${scrollPoss}`);
-                    // };
-                    // console.log(`${bottomsUp}`);
                     break;
                 default:
                     break;
@@ -177,17 +125,7 @@ export class ParaSkill extends Component{
         return returner;
     };
 
-    window2Parent = () =>{
-
-    };
-
     paraskillScroll = (grabber) =>{
-        //maybe find out bottom of body to bottom of parent
-        //and compare the need to scroll to that ratio
-        //point where bottom of parent needs to be in
-        //relation to the bottom of outer window to have a 
-        //complete parallax effect
-
         const paraskillElements = document.getElementsByClassName('paraskill'),
             sePlace = document.querySelector('.paraskill'),
             paraskillQuantity = paraskillElements.length,
@@ -203,10 +141,6 @@ export class ParaSkill extends Component{
             offsetter = sCalc(scrolled, scrollSpeed, 'pDivPos'),
             thisPass = this;
 
-            //let scrollSpeed instead?
-            // console.log(pTop);
-            //maybe just get getboundingclientrect calculate how high that needs to be 
-            //for your stuff to work
             if(grabber === true){
                 return grabber = {
                     paraskillElements, 
@@ -224,12 +158,6 @@ export class ParaSkill extends Component{
                     offsetter
                 };
             };
-            //maybe find out bottom of body to bottom of parent
-        //and compare the need to scroll to that ratio
-        //point where bottom of parent needs to be in
-        //relation to the bottom of outer window to have a 
-        //complete parallax effect
-
 
         if(window.outerWidth < 393){
             paraskillElements[0].style.bottom = pBottom;
