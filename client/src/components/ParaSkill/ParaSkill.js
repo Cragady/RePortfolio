@@ -53,7 +53,7 @@ export class ParaSkill extends Component{
                 if(paraskillElements[0].dataset.origpos === undefined){
                     paraskillElements[0].dataset.origpos = cBottom;
                 };
-                thiss.positionListener(scrollComparator + 1, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
+                thiss.positionListener((scrollComparator + 1), scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
             });
         } else {
             setTimeout(function(){
@@ -160,7 +160,7 @@ export class ParaSkill extends Component{
             };
 
         if(window.outerWidth < 393){
-            paraskillElements[0].style.bottom = pBottom;
+            thisPass.positionListener(scrolled, scrollComparator, cBottom, pBottom, paraskillElements[0], scrollSpeed, offsetter);
             return;
         } else {
             window.requestAnimationFrame(function(){
