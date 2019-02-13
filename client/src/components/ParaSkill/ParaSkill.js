@@ -33,13 +33,13 @@ export class ParaSkill extends Component{
     componentDidMount(){
 
         window.addEventListener('scroll', this.paraskillScroll);
-        window.addEventListener('resize', this.bottomSetter2);
+        window.addEventListener('resize', this.bottomSetter);
         this.bottomSetter();
     };
 
     componentWillUnmount(){
         window.removeEventListener('scroll', this.paraskillScroll);
-        window.removeEventListener('resize', this.bottomSetter2);
+        window.removeEventListener('resize', this.bottomSetter);
     };
 
     bottomSetter = () =>{
@@ -87,6 +87,7 @@ export class ParaSkill extends Component{
                 paraskillElements[0].dataset.origpos = cBottom;
             };
             this.positionListener(scrollComparator + 1, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
+            this.positionListener(scrollComparator + 1, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
         } else{
             const {paraskillElements, sePlace, paraskillQuantity,
                 pElem, pBottom, pTop, cBottom, sCalc,
@@ -98,12 +99,20 @@ export class ParaSkill extends Component{
                 paraskillElements[0].dataset.origpos = cBottom;
             };
             this.positionListener(scrolled, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
+            this.positionListener(scrolled, scrollComparator, cBottom, pBottom, currentElement, scrollSpeed, offsetter);
         };
     };
 
     positionListener = (s, sTar, cBot, pBot, cElem, sSpeed, ofS) =>{
-        if((s >= sTar) && ((cBot < pBot) || (cBot > pBot))){
-            cElem.style.transform = `translate3d(0, ${Math.round(sTar * sSpeed * ofS)}px, 0)`;
+        if(s >= sTar){
+            // cElem.style.transform = `translate3d(0, ${Math.round(sTar * sSpeed * ofS)}px, 0)`;
+            cElem.style.transform = `translate3d(0, 500px, 0)`;
+            // cElem.style.bottom = pBot;
+            // if(window.outerWidth > 393){
+                // if(cBot < pBot || cBot > pBot){
+                    
+                // }
+            // }
         };
     };
 

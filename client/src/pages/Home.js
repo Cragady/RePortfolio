@@ -36,7 +36,7 @@ export class Home extends Component{
                         <p>As a developer, my goal is to ever expand my skill set, enabling me to be versatile in any work environment.</p>
                     </div>
                 </div>
-                    
+                
                 <ParaSkill />
 
             </section>
