@@ -48,7 +48,7 @@ export class ParaSkill extends Component{
             });
         } else if(window.outerWidth > 991){
             setTimeout(function(){
-                thiss.bottomHandler('75px');
+                thiss.bottomHandler('75px'), 10;
             });
         } else {
             setTimeout(function(){
