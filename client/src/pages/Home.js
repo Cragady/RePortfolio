@@ -8,8 +8,8 @@ export class Home extends Component{
         super(props);
         this.state={
             picData: []
-        }
-    };
+        };
+    };Z
 
     getPicInfo = () =>{
         API.skillPics().then(res =>{
