@@ -92,12 +92,14 @@ export class ParaSkill extends Component{
         if(sP !== undefined && sP[1] === undefined){
             cElem.style.bottom = pBot;
             cElem.style.transform = `translate3d(0, 500px, 0)`;
-        } else if(s >= sTar || cBot > pBot){
+        } else if(s >= sTar || cBot >= pBot){
             cElem.style.bottom = pBot;
             cElem.style.transform = `translate3d(0, 500px, 0)`;
         } else if (scrollWin <= 1){
             cElem.style.bottom = pBot;
             cElem.style.transform = `translate3d(0, 500px, 0)`;
+        } else if(cBot >= pBot){
+            return; 
         } else {
             cElem.style.bottom = 100 + '%';
             cElem.style.transform = `translate3d(0, ${Math.round(s * sSpeed * ofS)}px, 0)`;
