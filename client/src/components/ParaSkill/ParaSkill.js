@@ -45,15 +45,15 @@ export class ParaSkill extends Component{
         if(window.outerWidth < 393){
             setTimeout(function(){
                 thiss.bottomHandler('38px');
-            }), 10;
+            }, 10);
         } else if(window.outerWidth > 991){
             setTimeout(function(){
                 thiss.bottomHandler('75px');
-            }), 10;
+            }, 10);
         } else {
             setTimeout(function(){
                 thiss.bottomHandler('50px');
-            }), 10;
+            }, 10);
         };
     };
 
