@@ -14,6 +14,7 @@ Really, probably much better this way, so that it won't seed the database with e
 
 # Active
 
+* Need to iron out why sometimes when you refresh page, on deployed site, it incorrectly calculates where the parallax should go
 * Put icon pic info into database (seed it! `skillData.json/skillSeedDB.js`)
 * Make parallax-container div dynamically sized according to how many pictures there are (or use different set sizes, use padding for bottom of parent)
 * include animations for skills, happens on click, when the bottom of parallax is at bottom of parent; will replace the filter background in front of the gradient
