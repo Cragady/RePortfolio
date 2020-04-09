@@ -5,6 +5,8 @@ import './Nav.css';
 export class Nav extends Component{
 
     render(){
+        console.log(window.location);
+        console.log(window.location.pathname);
         return(
             <div className='da-navs'>
                 <ul className='nav nav-cust'>
