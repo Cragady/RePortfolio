@@ -1,5 +1,14 @@
+/* 
+    This file is for reference only, for legacy's sake. OR if I manage to find 
+    a much cleaner way to implement the scrolling. A lot of hair being pulled 
+    over this fild. There's probably a much better way to get the results I 
+    wanted. My friend, a CSS master says it could all be done in CSS. I looked
+    around, but it didn't do *exactly* what I wanted. But at this point, it 
+    doesn't matter, I took it a different direction.
+*/
+
 import React, { Component } from 'react';
-import Skills from "./Skills";
+import Skills from "../Skills/Skills";
 import './ParaSkill.css';
 
 //Throw this into the database later
@@ -220,6 +229,7 @@ export class ParaSkill extends Component{
                                 <Skills key={skill} 
                                     img={`/images/skills/${skill}.png`} skill={skill} 
                                     funkPass={this.wordHandler}
+                                    extraClassName='skill-pic'
                                 />
                             );
                         })}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ParaSkill } from '../components/ParaSkill';
+import { PSkillScroll } from '../components/PSkillScroll';
 import './Pages.css';
 import API from '../utils/API';
 
@@ -36,8 +36,8 @@ export class Home extends Component{
                         <p>As a developer, my goal is to ever expand my skill set, enabling me to be versatile in any work environment.</p>
                     </div>
                 </div>
-                
-                <ParaSkill />
+
+                <PSkillScroll />
 
                 <div className='badge mt-5' ><a href='https://www.youracclaim.com/badges/d41a41a4-1de2-48d4-8d46-545d4ff49c9b/public_url' target='_blank' rel='noopener noreferrer'><img className='img-fluid badge-img' src='/images/badge/badge-coding-bootcamp-trilogy.png' alt='certificate badge' /></a></div>
 
