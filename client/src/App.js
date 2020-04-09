@@ -14,7 +14,9 @@ class App extends Component {
           <div id="wrap">
             <div id="main" className="App">
               <BackgroundDancer />
-              <Nav />
+              <Switch>
+                <Route path='/*' component={Nav} />
+              </Switch>
               <Switch>
                 <Route
                   path='/contact'

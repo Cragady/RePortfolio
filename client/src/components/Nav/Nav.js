@@ -3,10 +3,19 @@ import { Link } from 'react-router-dom';
 import './Nav.css';
 
 export class Nav extends Component{
+    constructor(props){
+        super(props);
+        this.location = this.props.location;
+    };
+
+    componentWillReceiveProps(nextProps){
+        if (nextProps.location !== this.props.location) {
+            this.location = nextProps.location;
+        };
+    };
 
     render(){
-        console.log(window.location);
-        console.log(window.location.pathname);
+        console.log(this.location);
         return(
             <div className='da-navs'>
                 <ul className='nav nav-cust'>
@@ -14,10 +23,10 @@ export class Nav extends Component{
                         <Link
                             to='/'
                             className={
-                                window.location.pathname === '/' ? 'nav-link active' : 'nav-link inactive'
+                                this.location.pathname === '/' ? 'nav-link active' : 'nav-link inactive'
                             }
                             id={
-                                window.location.pathname === '/' ? 'active-cust' : ''
+                                this.location.pathname === '/' ? 'active-cust' : ''
                             }
                         >
                             Home
@@ -26,8 +35,8 @@ export class Nav extends Component{
                     <li className='nav-item li-item-cust'>
                         <Link
                             to='/portfolio'
-                            className={window.location.pathname === '/portfolio' ? 'nav-link active' : 'nav-link inactive'}
-                            id={window.location.pathname === '/portfolio' ? 'active-cust' : ''}
+                            className={this.location.pathname === '/portfolio' ? 'nav-link active' : 'nav-link inactive'}
+                            id={this.location.pathname === '/portfolio' ? 'active-cust' : ''}
                         >
                             Portfolio
                         </Link>
@@ -35,8 +44,8 @@ export class Nav extends Component{
                     <li className='nav-item li-item-cust'>
                         <Link 
                             to='/about'
-                            className={window.location.pathname === '/about' ? 'nav-link active' : 'nav-link inactive'}
-                            id={window.location.pathname === '/about' ? 'active-cust' : ''}
+                            className={this.location.pathname === '/about' ? 'nav-link active' : 'nav-link inactive'}
+                            id={this.location.pathname === '/about' ? 'active-cust' : ''}
                         >
                             About Me
                         </Link>
