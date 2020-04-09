@@ -15,7 +15,6 @@ export class Nav extends Component{
     };
 
     render(){
-        console.log(this.location);
         return(
             <div className='da-navs'>
                 <ul className='nav nav-cust'>
